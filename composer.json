@@ -1,0 +1,19 @@
+{
+  "name": "shusha/dynamicobjects",
+  "description": "A library for creating and managing objects using reflection.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Shusha228",
+      "email": "danil.belikov@urfu.me"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "shusha\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}
