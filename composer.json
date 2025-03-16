@@ -15,5 +15,11 @@
   },
   "require": {
     "php": ">=8.0"
+  },
+  "extra": {
+    "virion": {
+      "spec": "3.1",
+      "namespace-root": "shusha\\dynamicobjects"
+    }
   }
 }
