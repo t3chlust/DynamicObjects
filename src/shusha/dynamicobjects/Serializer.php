@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace shusha;
+namespace shusha\dynamicobjects;
 
 use ReflectionClass;
 use ReflectionException;
