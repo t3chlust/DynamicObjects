@@ -10,7 +10,7 @@ DynamicObjects Library is a library for creating and managing objects using refl
 * Creating and initializing objects
 
 ```php
-use shusha\ObjectFactory;
+use shusha\dynamicobjects\ObjectFactory;
 
 class User{
 
@@ -29,7 +29,7 @@ var_dump($user);
 
 * Serialization and deserialization of objects
 ```php
-use shusha\Serializer;
+use shusha\dynamicobjects\Serializer;
 
 $serialized = Serializer::serialize($user);
 $deserialized = Serializer::deserialize(User::class, $serialized);
@@ -39,7 +39,7 @@ var_dump($serialized, $deserialized);
 
 * Object validation
 ```php
-use shusha\Validator;
+use shusha\dynamicobjects\Validator;
 
 $isValid = Validator::validate($user, ['age' => fn($age) => $age > 18]);
 var_dump($isValid);
@@ -47,7 +47,7 @@ var_dump($isValid);
 
 * Object cloning
 ```php
-use shusha\Cloner;
+use shusha\dynamicobjects\Cloner;
 
 $clonedUser = Cloner::clone($user);
 var_dump($clonedUser);
@@ -56,10 +56,10 @@ var_dump($clonedUser);
 ## MySQL Object Mapping
 
 ```php
-use shusha\ObjectFactory;
-use shusha\Serializer;
-use shusha\Validator;
-use shusha\Cloner;
+use shusha\dynamicobjects\ObjectFactory;
+use shusha\dynamicobjects\Serializer;
+use shusha\dynamicobjects\Validator;
+use shusha\dynamicobjects\Cloner;
 use PDO;
 
 class User{
